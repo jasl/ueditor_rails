@@ -4,8 +4,8 @@
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="robots" content="noindex, nofollow"/>
-    <script type="text/javascript" src="ueditor/dialogs/internal.js"></script>
-    <link rel="stylesheet" type="text/css" href="ueditor/dialogs/emotion/emotion.css">
+    <script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/internal.js' %>"></script>
+    <link rel="stylesheet" type="text/css" href="<%= asset_path 'ueditor/dialogs/emotion/emotion.css' %>">
 </head>
 <body>
 <div id="tabPanel" class="wrapper">
@@ -31,7 +31,7 @@
 <div id="tabIconReview">
     <img id='faceReview' class='review'/>
 </div>
-<script type="text/javascript" src="ueditor/dialogs/emotion/emotion.js"></script>
+<script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/emotion/emotion.js' %>"></script>
 <script type="text/javascript">
     var emotion = {
         tabNum:7, //切换面板数量

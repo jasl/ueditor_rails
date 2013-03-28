@@ -8403,7 +8403,7 @@ baidu.editor.ui = {};(function (){
 
     var iframeUrlMap = {
         'anchor':'~/dialogs/anchor/anchor.html',
-        'insertimage':'~/dialogs/image/image.html',
+        'insertimage':'<%= UeditorRails::Engine.routes.url_helpers.dialogs_image_path %>',
         'link':'~/dialogs/link/link.html',
         'spechars':'~/dialogs/spechars/spechars.html',
         'searchreplace':'~/dialogs/searchreplace/searchreplace.html',
@@ -8414,7 +8414,7 @@ baidu.editor.ui = {};(function (){
         'highlightcode':'~/dialogs/highlightcode/highlightcode.html',
         'emotion':'~/dialogs/emotion/emotion.html',
         'wordimage':'~/dialogs/wordimage/wordimage.html',
-        'attachment':'~/dialogs/attachment/attachment.html',
+        'attachment':'<%= UeditorRails::Engine.routes.url_helpers.dialogs_attachment_path %>',
         'insertframe':'~/dialogs/insertframe/insertframe.html',
         'edittip':'~/dialogs/table/edittip.html',
         'edittable':'~/dialogs/table/edittable.html',

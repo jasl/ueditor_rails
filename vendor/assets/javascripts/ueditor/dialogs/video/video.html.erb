@@ -4,8 +4,8 @@
 <head>
     <title></title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <script type="text/javascript" src="ueditor/dialogs/internal.js"></script>
-    <link rel="stylesheet" type="text/css" href="ueditor/dialogs/video/video.css" />
+    <script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/internal.js' %>"></script>
+    <link rel="stylesheet" type="text/css" href="<%= asset_path 'ueditor/dialogs/video/video.css' %>" />
 </head>
 <body>
 <div class="wrapper">
@@ -56,7 +56,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="ueditor/dialogs/video/video.js"></script>
+<script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/video/video.js' %>"></script>
 <script type="text/javascript">
     window.onload = function(){
         video.init();

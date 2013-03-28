@@ -9,14 +9,17 @@ module UeditorRails
     autoload :FormBuilder, 'ueditor_rails/helpers/form_builder'
   end
 
-  mattr_accessor :assets
-  @@assets = nil
+  class<< self
+    def root_path
+      @root_path ||= Pathname.new(File.dirname(File.expand_path('../', __FILE__)))
+    end
 
-  def self.root_path
-    @root_path ||= Pathname.new(File.dirname(File.expand_path('../', __FILE__)))
-  end
+    def assets
+      @assets ||= Util.select_assets('ueditor', 'vendor/assets/javascripts') << "ckeditor/init.js"
+    end
 
-  def self.assets
-    @@assets ||= Util.select_assets("ueditor", "vendor/assets/javascripts") << "ckeditor/init.js"
+    def ueditor_base_path
+      @ueditor_base_path ||= self.root_path.join('vendor/assets/javascripts/ueditor')
+    end
   end
 end

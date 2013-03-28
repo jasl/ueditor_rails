@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   root :to => 'posts#index'
 
-  mount UeditorRails::Engine => "/ueditor_rails"
+  mount UeditorRails::Engine => "/ueditor"
 end
