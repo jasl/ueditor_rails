@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.ueditor_text :body %>
+    <%= f.ueditor_text :body, :width => 500, :toolbars => [["bold","italic","underline"]] %>
   </div>
   <div class="actions">
     <%= f.submit %>
