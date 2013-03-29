@@ -4,7 +4,7 @@ module UeditorRails
       extend ActiveSupport::Concern
 
       def ueditor_text(method, options = {})
-        @template.send("ueditor_text", @object_name, method, objectify_options(options))
+        @template.send('ueditor_text', @object_name, method, objectify_options(options))
       end
     end
   end
