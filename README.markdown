@@ -6,7 +6,7 @@ UEditor integration with Rails.
 Go to ```test/dummy``` and ```rails s```, remember ```bundle``` first.
 
 ## Installation
-Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/jasl/ueditor_rails.git'```.
+Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/jasl/ueditor_rails.git'``` or ```gem 'ueditor_rails'```.
 
 and run ```rails g ueditor_rails:install```.
 
