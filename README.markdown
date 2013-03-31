@@ -8,7 +8,7 @@ Go to ```test/dummy``` and ```rails s```, remember ```bundle``` first.
 ## Installation
 Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/jasl/ueditor_rails.git'``` or ```gem 'ueditor_rails'```.
 
-and run ```rails g ueditor_rails:install```.
+```bundle``` and run ```rails g ueditor_rails:install```.
 
 ## Configure
 See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
