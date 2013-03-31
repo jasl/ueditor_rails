@@ -3,7 +3,7 @@ module UeditorRails
     module ViewHelper
       extend ActiveSupport::Concern
 
-      def ueditor_text_tag(name, content, options = {})
+      def ueditor_text_tag(name, content = nil, options = {})
         element_id = sanitize_to_id(options.delete(:id) || name)
         input_html = { :id => element_id, :name => name, :type => 'text/plain' }
 
