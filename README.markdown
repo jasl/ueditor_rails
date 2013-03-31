@@ -23,7 +23,8 @@ See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 The option can be any which in ```ueditor_config.js.erb```.
 
 ## Upload backend
-I don't want implement it, cause it's design depends your business, so you should do it by yourself.
+I don't want implement it, cause it's design depends your business, so you should do it by yourself. 
+you can modify ```app/assets/javascripts/ueditor_config.js.erb``` like ```imageUrl: "<%= Rails.application.routes.url_helpers.ueditor_image_path %>"``` to make it available.
 
 ## Todo
 - cross domain upload support
