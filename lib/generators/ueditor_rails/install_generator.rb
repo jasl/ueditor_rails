@@ -9,7 +9,7 @@ module UeditorRails
     end
 
     def mount_engine
-      route "mount Ueditor_rails::Engine => '/ueditor'"
+      route "mount UeditorRails::Engine => '/ueditor'"
     end
   end
 end
