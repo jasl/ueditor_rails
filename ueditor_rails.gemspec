@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Ueditor integration on Rails"
   s.description = "Ueditor is a WYSIWYG editor adapt to Chinese habits, this gem is a easy way to integrate with Rails"
 
-  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.1"

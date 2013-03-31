@@ -3,10 +3,13 @@
 UEditor integration with Rails
 
 ## Demo
-go to ```test/dummy``` and ```rails s```, remember ```bundle``` first.
+Go to ```test/dummy``` and ```rails s```, remember ```bundle``` first.
 
 ## Installation
-```mount UeditorRails::Engine => '/ueditor'``` in your ```config/routes.rb```.
+```rails g ueditor_rails:install```
+
+## Configure
+See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 
 ## Using
 ```f.ueditor_text :body```
