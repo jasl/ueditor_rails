@@ -15,7 +15,7 @@ module UeditorRails
     end
 
     def assets
-      @assets ||= Util.select_assets('ueditor', 'vendor/assets/javascripts') << 'ckeditor/init.js'
+      @assets ||= Util.select_assets << 'ckeditor/init.js'
     end
 
     def ueditor_base_path

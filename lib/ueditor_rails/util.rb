@@ -15,14 +15,17 @@ module UeditorRails
         js.html_safe
       end
 
-      def select_assets(path, relative_path)
-        folder = File.join(relative_path, path, '**')
-        relative_folder = UeditorRails.root_path.join(relative_path)
+      def select_assets
+        assets = []
 
-        Dir[UeditorRails.root_path.join(folder, '*.{js,css,gif,png,jpg,swf,erb}')].inject([]) do |list, file|
-          list << Pathname.new(file).relative_path_from(relative_folder).to_s
-          list
+        Dir[UeditorRails.root_path.join("vendor/assets/javascripts/**", '*.{coffee,scss,sass,png,jpeg,jpg,gif,js,css,erb}')].each do |path|
+          ext = File.extname(path)
+          path = path[0..-ext.length-1] if %w(.scss .sass .coffee .erb).include? ext
+
+          assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join("vendor/assets/javascripts"))
         end
+
+        assets
       end
     end
   end
