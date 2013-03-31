@@ -530,9 +530,9 @@ var imageUploader = {},
             for (var j in nameMaps) {
                 var div = document.createElement("div");
                 div.setAttribute("name", j);
-                if (j == "none") div.className = "focus";
+                if (j == "none") div.className = "focus ";
 
-                div.style.cssText = "background:url(<%= asset_path 'ueditor/dialogs/image/images/' %>" + j + "_focus.jpg);";
+                div.className += "align_btn_" + j;
                 div.setAttribute("title", nameMaps[j]);
                 floatContainer.appendChild(div);
             }
