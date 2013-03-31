@@ -5,7 +5,7 @@ module UeditorRails
     desc "Mount Engine and copy config file to Rails app."
 
     def copy_config_file
-      template "ueditor_config.js.erb.erb", "app/assets/javascripts/ueditor_config.js.erb"
+      template "ueditor_config.js.erb", "app/assets/javascripts/ueditor_config.js.erb"
     end
 
     def mount_engine
