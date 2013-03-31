@@ -18,11 +18,11 @@ module UeditorRails
       def select_assets
         assets = []
 
-        Dir[UeditorRails.root_path.join("vendor/assets/javascripts/**/**.*")].each do |path|
+        Dir[UeditorRails.root_path.join('vendor/assets/javascripts/**/**.*')].each do |path|
           ext = File.extname(path)
           path = path[0..-ext.length-1] if %w(.scss .sass .coffee .erb).include? ext
 
-          assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join("vendor/assets/javascripts"))
+          assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join('vendor/assets/javascripts'))
         end
 
         assets
