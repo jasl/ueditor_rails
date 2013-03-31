@@ -11,7 +11,8 @@ module UeditorRails
         options['initialFrameHeight'] = options.delete(:height) unless options[:height].blank?
 
         output_buffer = ActiveSupport::SafeBuffer.new
-        output_buffer << content_tag(:script, content.to_s.html_safe, input_html.stringify_keys)
+        #output_buffer << content_tag(:script, content, input_html.stringify_keys)
+        output_buffer << content_tag(:script, content, input_html.stringify_keys)
         output_buffer << javascript_tag { Util.js_replace(element_id, options.stringify_keys) }
         output_buffer
       end
