@@ -19,7 +19,7 @@ module UeditorRails
         folder = File.join(relative_path, path, '**')
         relative_folder = UeditorRails.root_path.join(relative_path)
 
-        Dir[UeditorRails.root_path.join(folder, '*.{js,css,gif,png,jpg,swf}')].inject([]) do |list, file|
+        Dir[UeditorRails.root_path.join(folder, '*.{js,css,gif,png,jpg,swf,erb}')].inject([]) do |list, file|
           list << Pathname.new(file).relative_path_from(relative_folder).to_s
           list
         end
