@@ -144,7 +144,7 @@ div.edui-box {
 
 .edui-default .edui-editor-toolbarboxouter {
     border-bottom: 1px solid #ccc;
-    background: white url(../images/toolbar_bg.png) repeat-x bottom left;
+    background: white url(toolbar_bg.png) repeat-x bottom left;
 }
 
 .edui-default .edui-editor-toolbarboxinner {
@@ -203,7 +203,7 @@ div.edui-box {
     width: 100%;
     height: 12px;
     margin-top: 10px;
-    background: url(../images/scale.png) no-repeat;
+    background: url(scale.png) no-repeat;
     cursor: se-resize;
 }
 .edui-default .edui-editor-breadcrumb {
@@ -225,7 +225,7 @@ div.edui-box {
     background-color: #fff6d9;
     padding: 5px;
     font-size: 10pt;
-    font-family: "宋体";
+    font-family: "??";
 }
 
 .edui-default .edui-bubble .edui-shadow {
@@ -271,7 +271,7 @@ div.edui-box {
     cursor: pointer;
     color: red;
 }
-/*可选中菜单按钮*/
+/*???????*/
 .edui-default .edui-list .edui-bordereraser {
     display: none;
 }
@@ -336,7 +336,7 @@ div.edui-box {
     width: 200px !important;
     padding: 2px 5px;
 }
-/* 可选中按钮弹出菜单*/
+/* ?????????*/
 .edui-default .edui-menu {
     z-index: 3000;
 }
@@ -349,7 +349,7 @@ div.edui-box {
 .edui-default .edui-menu-body {
     _width: 150px;
     min-width: 150px;
-    background: url("../images/sparator_v.png") repeat-y 25px;
+    background: url(sparator_v.png) repeat-y 25px;
 }
 
 .edui-default .edui-menuitem-body {
@@ -364,8 +364,8 @@ div.edui-box {
 .edui-default .edui-menuitem .edui-icon {
     width: 20px !important;
     height: 20px !important;
-    background: url(../images/icons.png) 0 -40px;
-    background: url(../images/icons.gif) 0 -40 px\9;
+    background: url(icons.png) 0 -40px;
+    background: url(icons.gif) 0 -40 px\9;
 }
 
 .edui-default .edui-menuitem .edui-label {
@@ -376,7 +376,7 @@ div.edui-box {
 }
 
 .edui-default .edui-state-checked .edui-menuitem-body {
-    background: url("../images/icons-all.gif") no-repeat 6px -205px;
+    background: url(icons-all.gif) no-repeat 6px -205px;
 }
 
 .edui-default .edui-state-disabled .edui-menuitem-label {
@@ -384,7 +384,7 @@ div.edui-box {
 }
 
 
-/*不可选中菜单按钮 */
+/*???????? */
 .edui-default .edui-toolbar .edui-combox-body .edui-button-body {
     width: 60px;
     font-size: 12px;
@@ -395,8 +395,8 @@ div.edui-box {
 }
 
 .edui-default .edui-toolbar .edui-combox-body .edui-arrow {
-    background: url(../images/icons.png) -741px 0;
-    _background: url(../images/icons.gif) -741px 0;
+    background: url(icons.png) -741px 0;
+    _background: url(icons.gif) -741px 0;
     height: 20px;
     width: 9px;
 }
@@ -442,14 +442,14 @@ div.edui-box {
     background-color: white;
     border: 1px solid gray;
 }
-/*普通按钮样式及状态*/
+/*?????????*/
 .edui-default .edui-toolbar .edui-button .edui-icon,
 .edui-default .edui-toolbar .edui-menubutton .edui-icon,
 .edui-default .edui-toolbar .edui-splitbutton .edui-icon {
     height: 20px !important;
     width: 20px !important;
-    background-image: url(../images/icons.png);
-    background-image: url(../images/icons.gif) \9;
+    background-image: url(icons.png);
+    background-image: url(icons.gif) \9;
 }
 
 .edui-default .edui-toolbar .edui-button .edui-button-wrap {
@@ -832,8 +832,8 @@ div.edui-box {
 /*splitbutton*/
 .edui-default .edui-toolbar .edui-splitbutton-body .edui-arrow,
 .edui-default .edui-toolbar .edui-menubutton-body .edui-arrow {
-    background: url(../images/icons.png) -741px 0;
-    _background: url(../images/icons.gif) -741px 0;
+    background: url(icons.png) -741px 0;
+    _background: url(icons.gif) -741px 0;
     height: 20px;
     width: 9px;
 }
@@ -904,7 +904,7 @@ div.edui-box {
     background-color: white;
 }
 
-/* 解决嵌套导致的图标问题 */
+/* ??????????? */
 .edui-default .edui-for-insertorderedlist .edui-popup-body .edui-icon,
 .edui-default .edui-for-lineheight .edui-popup-body .edui-icon,
 .edui-default .edui-for-rowspacingtop .edui-popup-body .edui-icon,
@@ -914,7 +914,7 @@ div.edui-box {
     background-image: none  ;
 }
 
-/* 弹出菜单 */
+/* ???? */
 .edui-default .edui-popup {
     z-index: 3000;
 }
@@ -972,7 +972,7 @@ div.edui-box {
     border-right: 1px solid gray;
 }
 
-/* 弹出对话框按钮和对话框大小 */
+/* ????????????? */
 .edui-default .edui-dialog {
     z-index: 2000;
     position: absolute;
@@ -1011,7 +1011,7 @@ div.edui-box {
 .edui-default .edui-dialog-titlebar {
     height: 26px;
     border-bottom: 1px solid #c6c6c6;
-    background: url(../images/dialog-title-bg.png) repeat-x bottom;
+    background: url(dialog-title-bg.png) repeat-x bottom;
     position: relative;
     cursor: move;
 }
@@ -1036,11 +1036,11 @@ div.edui-box {
     height: 20px;
     width: 20px;
     cursor: pointer;
-    background: url("../images/icons-all.gif") no-repeat 0 -59px;
+    background: url("icons-all.gif") no-repeat 0 -59px;
 }
 
 .edui-default .edui-dialog-closebutton .edui-state-hover .edui-button-body {
-    background: url("../images/icons-all.gif") no-repeat 0 -89px;
+    background: url("icons-all.gif") no-repeat 0 -89px;
 }
 
 .edui-default .edui-dialog-foot {
@@ -1057,7 +1057,7 @@ div.edui-box {
 }
 
 .edui-default .edui-dialog-buttons .edui-button .edui-button-body {
-    background: url("../images/icons-all.gif") no-repeat;
+    background: url(icons-all.gif) no-repeat;
     height: 24px;
     width: 96px;
     font-size: 12px;
@@ -1067,7 +1067,7 @@ div.edui-box {
 }
 
 .edui-default .edui-dialog-buttons .edui-button .edui-state-hover .edui-button-body {
-    background: url("../images/icons-all.gif") no-repeat 0 -30px;
+    background: url(icons-all.gif) no-repeat 0 -30px;
 }
 
 .edui-default .edui-dialog iframe {
@@ -1249,7 +1249,7 @@ div.edui-box {
     width: 515px;
     height: 360px;
 }
-/*段落弹出菜单*/
+/*??????*/
 .edui-default .edui-for-paragraph .edui-listitem-label {
     font-family: Tahoma, Verdana, Arial, Helvetica;
 }
@@ -1294,7 +1294,7 @@ div.edui-box {
     font-size: 12px;
     line-height: 14px;
 }
-/* 表格弹出菜单 */
+/* ?????? */
 .edui-default .edui-for-inserttable .edui-splitborder {
     display: none
 }
@@ -1326,16 +1326,16 @@ div.edui-box {
 }
 
 .edui-default .edui-tablepicker .edui-pickarea {
-    background: url("../images/unhighlighted.gif") repeat;
+    background: url(unhighlighted.gif) repeat;
     height: 220px;
     width: 220px;
 }
 
 .edui-default .edui-tablepicker .edui-pickarea .edui-overlay {
-    background: url("../images/highlighted.gif") repeat;
+    background: url(highlighted.gif) repeat;
 }
 
-/* 颜色弹出菜单 */
+/* ?????? */
 .edui-default .edui-colorpicker-topbar {
     height: 27px;
     width: 200px;
@@ -1378,7 +1378,7 @@ div.edui-box {
     height: 14px;
     margin: 0;
 }
-/*自动排版弹出菜单*/
+/*????????*/
 .edui-default .edui-autotypesetpicker .edui-autotypesetpicker-body {
     font-size: 12px;
     margin-bottom: 3px;
@@ -1399,7 +1399,7 @@ div.edui-box {
     margin: 3px 3px 3px 4px;
     *margin: 1px 0 0 0;
 }
-/*自动排版弹出菜单*/
+/*????????*/
 .edui-default .edui-cellalignpicker .edui-cellalignpicker-body {
     width: 70px;
     font-size: 12px;
@@ -1417,8 +1417,8 @@ div.edui-box {
     height: 20px;
     width: 20px;
     padding: 1px;
-    background-image: url(../images/icons.png);
-    background-image: url(../images/icons.gif) \9;
+    background-image: url(icons.png);
+    background-image: url(icons.gif) \9;
 }
 .edui-default .edui-cellalignpicker-body .edui-left{
     background-position: -460px 0;
@@ -1434,16 +1434,16 @@ div.edui-box {
     padding: 0;
     border: 1px solid #dcac6c;
 }
-/*分隔线*/
+/*???*/
 .edui-default .edui-toolbar .edui-separator {
     width: 2px;
     height: 20px;
     margin: 2px 4px 2px 3px;
-    background: url(../images/icons.png) -180px 0;
-    background: url(../images/icons.gif) -180px 0 \9;
+    background: url(icons.png) -180px 0;
+    background: url(icons.gif) -180px 0 \9;
 }
 
-/*颜色按钮 */
+/*???? */
 .edui-default .edui-toolbar .edui-colorbutton .edui-colorlump {
     position: absolute;
     overflow: hidden;
@@ -1452,8 +1452,8 @@ div.edui-box {
     width: 18px;
     height: 4px;
 }
-/*表情按钮及弹出菜单*/
-/*去除了表情的下拉箭头*/
+/*?????????*/
+/*??????????*/
 .edui-default .edui-for-emotion .edui-icon {
     background-position: -60px -20px;
 }
@@ -1484,7 +1484,7 @@ div.edui-box {
     height: 20px;
     width: 20px;
     float: right;
-    background: url("../images/icons-all.gif") no-repeat 10px -233px;
+    background: url(icons-all.gif) no-repeat 10px -233px;
 }
 
 .edui-default .edui-menu-body .edui-menuitem {
@@ -1508,7 +1508,7 @@ div.edui-box {
     background-color: #fff5d4;
     border: 1px solid #dcac6c;
 }
-/*粘贴弹出菜单*/
+/*??????*/
 .edui-default .edui-wordpastepop .edui-popup-content{
     border: none;
     padding: 0;
@@ -1518,7 +1518,7 @@ div.edui-box {
 .edui-default  .edui-pasteicon {
     width: 100%;
     height: 100%;
-    background-image: url('../images/wordpaste.png');
+    background-image: url(wordpaste.png);
     background-position: 0 0;
 }
 
@@ -1556,7 +1556,7 @@ div.edui-box {
     width: 29px;
     height: 29px;
     margin-left: 5px;
-    background-image: url('../images/wordpaste.png');
+    background-image: url(wordpaste.png);
     background-repeat: no-repeat;
 }
 .edui-default  .edui-pastecontainer .edui-button .edui-richtxticon {

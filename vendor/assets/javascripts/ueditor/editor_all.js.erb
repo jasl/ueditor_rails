@@ -9776,7 +9776,7 @@ baidu.editor.ui = {};(function (){
         var editor = new baidu.editor.Editor(options);
         editor.options.editor = editor;
         utils.loadFile(document, {
-            href:editor.options.themePath + editor.options.theme + "/css/ueditor.css",
+            href:editor.options.themePath + editor.options.theme + "/ueditor.css",
             tag:"link",
             type:"text/css",
             rel:"stylesheet"
@@ -11836,9 +11836,9 @@ UE.plugins['serialize'] = function () {
                         }
                     }
                     node.attributes.word_img = node.attributes.src;
-                    node.attributes.src = me.options.UEDITOR_HOME_URL + 'themes/default/images/spacer.gif';
+                    node.attributes.src = me.options.UEDITOR_HOME_URL + 'themes/default/spacer.gif';
                     var flag = parseInt(node.attributes.width)<128||parseInt(node.attributes.height)<43;
-                    node.attributes.style="background:url(" + (flag? me.options.themePath+me.options.theme +"/images/word.gif":me.options.langPath+me.options.lang + "/images/localimage.png")+") no-repeat center center;border:1px solid #ddd";
+                    node.attributes.style="background:url(" + (flag? me.options.themePath+me.options.theme +"/word.gif":me.options.langPath+me.options.lang + "/localimage.png")+") no-repeat center center;border:1px solid #ddd";
                     //node.attributes.style = 'width:395px;height:173px;';
                     word_img_flag && (word_img_flag.flag = 1);
                 }
@@ -13823,7 +13823,7 @@ UE.plugins['video'] = function (){
         return  !toEmbed ?
                 (addParagraph? ('<p '+ (align && align !="none" ? ( align == "center"? ' style="text-align:center;" ':' style="float:"'+ align ) : '') + '>'): '') +
                 '<img align="'+align+'" width="'+ width +'" height="' + height + '" _url="'+url+'" class="edui-faked-video"' +
-                ' src="' + me.options.UEDITOR_HOME_URL+'themes/default/images/spacer.gif" style="background:url('+me.options.UEDITOR_HOME_URL+'themes/default/images/videologo.gif) no-repeat center center; border:1px solid gray;" />' +
+                ' src="' + me.options.UEDITOR_HOME_URL+'themes/default/spacer.gif" style="background:url('+me.options.UEDITOR_HOME_URL+'themes/default/videologo.gif) no-repeat center center; border:1px solid gray;" />' +
                 (addParagraph?'</p>':'')
                 :
                 '<embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
@@ -14218,7 +14218,7 @@ UE.plugins['table'] = function () {
         'defaultCols':5,
         'defaultRows':5,
         'tdvalign':'top',
-        'cursorpath':me.options.UEDITOR_HOME_URL + "themes/default/images/cursor_",
+        'cursorpath':me.options.UEDITOR_HOME_URL + "themes/default/cursor_",
         'tableDragable':false
     });
     me.getUETable = getUETable;

@@ -4,8 +4,8 @@
 <head>
   <title></title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-  <script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/internal.js' %>"></script>
-  <link rel="stylesheet" href="<%= asset_path 'ueditor/dialogs/image/image.css' %>" type="text/css" />
+  <%= javascript_include_tag 'ueditor/dialogs/internal' %>
+  <%= stylesheet_link_tag 'ueditor_rails/dialogs/image' %>
 </head>
 <body>
 <div class="wrapper">
@@ -58,8 +58,7 @@
 
         <div class="saveDir">
           <var id="lang_savePath" ></var>：<select id="savePath">
-          <option value="1">upload</option>
-          <option value="2">upload1</option>
+          <option value="1">default</option>
         </select>
         </div>
       </div>
@@ -89,9 +88,8 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/tangram.js' %>"></script>
-<script type="text/javascript" src="<%= asset_path 'ueditor/dialogs/image/image.js' %>"></script>
 
+<%= javascript_include_tag 'ueditor_rails/dialogs/image.js' %>
 <script type="text/javascript">
   //全局变量
   var imageUrls = [],          //用于保存从服务器返回的图片信息数组
@@ -108,7 +106,7 @@
       url:editor.options.imageUrl,                                           // 上传处理页面的url地址
       ext:"{}",   //可向服务器提交的自定义参数列表
       fileType:'{"description":"'+lang.fileType+'", "extension":"*.gif;*.jpeg;*.png;*.jpg"}',     //上传文件格式限制
-      flashUrl:'<%= asset_path 'ueditor/dialogs/image/imageUploader.swf' %>',                                                  //上传用的flash组件地址
+      flashUrl:'<%= asset_path 'ueditor/third-party/imageUploader.swf' %>',                                                  //上传用的flash组件地址
       width:608,          //flash的宽度
       height:272,         //flash的高度
       gridWidth:121,     // 每一个预览图片所占的宽度
