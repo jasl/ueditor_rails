@@ -14,6 +14,10 @@ Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/j
 See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 
 ## Using
+```require ueditor_rails/init``` to your application.js first.
+
+**samples**
+
 ```f.ueditor_text :body```
 
 ```ueditor_text_tag 'test2', 'text here'```
