@@ -15,7 +15,7 @@ module UeditorRails
     end
 
     def assets
-      @assets ||= Util.select_assets << 'ckeditor/init.js'
+      @assets ||= Util.precompile_assets
     end
 
     def ueditor_base_path

@@ -4,6 +4,9 @@ require 'active_support/json/encoding'
 module UeditorRails
   module Util
     class << self
+      ASSET_FORMAT = '*.{coffee,scss,sass,png,jpeg,jpg,gif,js,css,erb}'
+      NEED_TO_COMPILE_STYLESHEET_EXT = %w(.scss .sass .coffee .erb)
+
       def js_replace(dom_id, options = nil)
         js_options = (options && !options.keys.empty?)? ActiveSupport::JSON.encode(options) : '{}'
         js = <<-JS
@@ -15,18 +18,25 @@ module UeditorRails
         js.html_safe
       end
 
-      def select_assets
+      def precompile_assets
         assets = []
 
-        Dir[UeditorRails.root_path.join('vendor/assets/javascripts/**/**.*')].each do |path|
-          ext = File.extname(path)
-          path = path[0..-ext.length-1] if %w(.scss .sass .coffee .erb).include? ext
+        %w(app vendor).each do |source|
+          %w(images javascripts stylesheets).each do |kind|
+            Dir[UeditorRails.root_path.join("#{source}/assets/#{kind}/**", ASSET_FORMAT)].each do |path|
+              next if File.basename(path)[0] == '_'
 
-          assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join('vendor/assets/javascripts'))
+              ext = File.extname(path)
+              path = path[0..-ext.length-1] if NEED_TO_COMPILE_STYLESHEET_EXT.include? ext
+
+              assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join("#{source}/assets/#{kind}"))
+            end
+          end
         end
 
         assets
       end
+
     end
   end
 end

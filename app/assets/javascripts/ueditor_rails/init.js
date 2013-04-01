@@ -1,4 +1,4 @@
-//= require ueditor_rails/config
+//= require ueditor_rails/_config
 //= require ueditor/editor_all
 //= require_self
 
