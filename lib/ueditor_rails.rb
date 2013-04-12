@@ -9,7 +9,14 @@ module UeditorRails
     autoload :FormBuilder, 'ueditor_rails/helpers/form_builder'
   end
 
+  mattr_accessor :enable_cross_domain
+
   class<< self
+
+    def enable_cross_domain
+      @@enable_cross_domain ||= false
+    end
+
     def root_path
       @root_path ||= Pathname.new(File.dirname(File.expand_path('../', __FILE__)))
     end

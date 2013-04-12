@@ -3,7 +3,7 @@ require_dependency "ueditor_rails/application_controller"
 module UeditorRails
   class LibsController < ApplicationController
     def swf_image_uploader
-      send_file UeditorRails.ueditor_base_path.join('dialogs/image/imageUploader.swf'),
+      send_file UeditorRails.ueditor_base_path.join('third-party/imageUploader.swf'),
                 :disposition => 'inline', :type => 'application/x-shockwave-flash'
     end
   

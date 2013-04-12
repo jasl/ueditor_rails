@@ -1,7 +1,5 @@
-//编辑器展示页面内容解析，加载资源工具
 //by zhanyi
 function uParse(selector,opt){
-    //需要的工具方法
     var ie = !!window.ActiveXObject,
         cssRule = ie ? function(key,style,doc){
             var indexList,index;
@@ -170,8 +168,6 @@ function uParse(selector,opt){
             }
         }();
 
-
-    //默认的配置项目
     var defaultOption ={
         liiconpath : 'http://bs.baidu.com/listicon/',
         listDefaultPaddingLeft : '20',
@@ -185,7 +181,6 @@ function uParse(selector,opt){
         }
     }
     domReady(function(){
-        //处理容器
         var contents;
         if(document.querySelectorAll){
             contents = document.querySelectorAll(selector)
@@ -282,15 +277,15 @@ function uParse(selector,opt){
                 customCss.push(selector +' .list-paddingleft-1{padding-left:0}');
                 customCss.push(selector +' .list-paddingleft-2{padding-left:'+defaultOption.listDefaultPaddingLeft+'px}');
                 customCss.push(selector +' .list-paddingleft-3{padding-left:'+defaultOption.listDefaultPaddingLeft*2+'px}');
-                //如果不给宽度会在自定义样式里出现滚动条
+
                 cssRule('list', selector +' ol,'+selector +' ul{margin:0;pading:0;}li{clear:both;}'+customCss.join('\n'), document);
             }
-            //解析内容
+
             var needParseTagName = {
                 'table' : function(){
                     cssRule('table',
                         selector +' table.noBorderTable td,'+selector+' table.noBorderTable th,'+selector+' table.noBorderTable caption{border:1px dashed #ddd !important}' +
-                            //插入表格的默认样式
+                            //����ı���Ĭ����ʽ
                             selector +' table{margin-bottom:10px;border-collapse:collapse;display:table;}' +
                             selector +' td,'+selector+' th{ background:white; padding: 5px 10px;border: 1px solid #DDD;}' +
                             selector +' caption{border:1px dashed #DDD;border-bottom:0;padding:3px;text-align:center;}' +
@@ -301,7 +296,6 @@ function uParse(selector,opt){
                 'ol' : checkList,
                 'ul' : checkList,
                 'pre': function(nodes){
-                    //避免重复加载高亮文件
                     if(typeof XRegExp == "undefined"){
                         loadFile(document,{
                             id : "syntaxhighlighter_js",
@@ -341,7 +335,6 @@ function uParse(selector,opt){
 
                 }
             };
-            //先插入默认属性
 
             for(var tag in needParseTagName){
                 var nodes = content.getElementsByTagName(tag);
@@ -351,8 +344,5 @@ function uParse(selector,opt){
             }
             defaultOption.customRule(content);
         });
-
-
-
     })
 }

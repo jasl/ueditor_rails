@@ -106,14 +106,14 @@
       url:editor.options.imageUrl,                                           // 上传处理页面的url地址
       ext:"{}",   //可向服务器提交的自定义参数列表
       fileType:'{"description":"'+lang.fileType+'", "extension":"*.gif;*.jpeg;*.png;*.jpg"}',     //上传文件格式限制
-      flashUrl:'<%= asset_path 'ueditor/third-party/imageUploader.swf' %>',                                                  //上传用的flash组件地址
+      flashUrl:'<%= swf_imageuploader_path %>',                                                  //上传用的flash组件地址
       width:608,          //flash的宽度
       height:272,         //flash的高度
       gridWidth:121,     // 每一个预览图片所占的宽度
       gridHeight:120,    // 每一个预览图片所占的高度
       picWidth:100,      // 单张预览图片的宽度
       picHeight:100,     // 单张预览图片的高度
-      uploadDataFieldName:editor.options.imageFieldName,    // POST请求中图片数据的key
+      uploadDataFieldName:editor.options.imageFiewoldName,    // POST请求中图片数据的key
       picDescFieldName:'pictitle',      // POST请求中图片描述的key
       maxSize:4,                         // 文件的最大体积,单位M
       compressSize:2,                   // 上传前如果图片体积超过该值，会先压缩,单位M
