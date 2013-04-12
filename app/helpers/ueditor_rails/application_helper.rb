@@ -17,5 +17,11 @@ module UeditorRails
           UeditorRails::Engine.routes.url_helpers.libs_swf_image_uploader_path :
           asset_path('ueditor/third-party/imageUploader.swf')
     end
+
+    def fclipboard_ueditor_path
+      UeditorRails.enable_cross_domain ?
+          UeditorRails::Engine.routes.url_helpers.libs_fclipboard_ueditor_path :
+          asset_path('ueditor/third-party/fClipboard_ueditor.swf')
+    end
   end
 end

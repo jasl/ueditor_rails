@@ -4,7 +4,7 @@ require 'active_support/json/encoding'
 module UeditorRails
   module Util
     class << self
-      ASSET_FORMAT = '*.{coffee,scss,sass,png,jpeg,jpg,gif,js,css,erb,swf}'
+      ASSET_FORMAT = '*.{coffee,scss,sass,png,jpeg,jpg,gif,js,css,erb,swf,exe}'
       NEED_TO_COMPILE_STYLESHEET_EXT = %w(.scss .sass .coffee .erb)
 
       def js_replace(dom_id, options = nil)

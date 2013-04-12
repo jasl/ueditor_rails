@@ -9,5 +9,9 @@ module UeditorRails
     def image
 
     end
+
+    def wordimage
+
+    end
   end
 end
