@@ -4,7 +4,7 @@ UeditorRails::Engine.routes.draw do
     get "libs/#{lib}"
   end
 
-  %w(attachment image wordimage).each do |dialog|
+  %w(attachment image wordimage scrawl).each do |dialog|
     get "dialogs/#{dialog}"
   end
 

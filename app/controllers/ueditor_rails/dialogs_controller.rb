@@ -13,5 +13,9 @@ module UeditorRails
     def wordimage
 
     end
+
+    def scrawl
+
+    end
   end
 end
