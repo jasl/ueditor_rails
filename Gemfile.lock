@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ueditor_rails (0.0.3)
+    ueditor_rails (0.0.4)
       jquery-rails
       rails (~> 3.2.1)
 

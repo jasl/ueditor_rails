@@ -13,5 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require ./ueditor_config
-//= require ueditor_rails/init
 //= require_self
