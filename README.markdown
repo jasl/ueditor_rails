@@ -1,4 +1,5 @@
-# UEditor Rails
+UEditor Rails
+======
 
 UEditor integration with Rails.
 
@@ -26,7 +27,7 @@ See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 
 The option can be any which in ```ueditor_config.js.erb```.
 
-## Upload backend
+## Upload backends
 I don't want implement it, cause it's design depends your business, so you should do it by yourself. 
 you can modify ```app/assets/javascripts/ueditor_config.js.erb``` like ```imageUrl: "<%= Rails.application.routes.url_helpers.ueditor_image_path %>"``` to make it available.
 
@@ -35,6 +36,12 @@ Add ```UeditorRails.enable_cross_domain = true``` in a initializer or 'applicati
 
 ## More about UEditor
 [UEditor doc](http://ueditor.baidu.com/website/document.html)
+
+## Help me
+
+You can open tickets to notice me bugs or suggestions, also you can fork it and send me PR.
+
+With power of open source, we could made it better and reduce more developer's work.
 
 ## License
 This project rocks and uses [MIT-LICENSE](http://jasl.mit-license.org/). Jasl
