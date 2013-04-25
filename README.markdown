@@ -15,7 +15,7 @@ Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/j
 See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 
 ## Using
-```require ueditor_rails/init``` to your application.js first.
+```require ./ueditor_config```(which generated at installation) to your application.js first.
 
 **samples**
 
@@ -40,8 +40,6 @@ Add ```UeditorRails.enable_cross_domain = true``` in a initializer or 'applicati
 ## Help me
 
 You can open tickets to notice me bugs or suggestions, also you can fork it and send me PR.
-
-With power of open source, we could made it better and reduce more developer's work.
 
 ## License
 This project rocks and uses [MIT-LICENSE](http://jasl.mit-license.org/). Jasl
