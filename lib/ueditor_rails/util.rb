@@ -29,7 +29,7 @@ module UeditorRails
               ext = File.extname(path)
               path = path[0..-ext.length-1] if NEED_TO_COMPILE_STYLESHEET_EXT.include? ext
 
-              assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join("#{source}/assets/#{kind}"))
+              assets << Pathname.new(path).relative_path_from(UeditorRails.root_path.join("#{source}/assets/#{kind}")).to_s
             end
           end
         end
