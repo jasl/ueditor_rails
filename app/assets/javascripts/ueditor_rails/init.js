@@ -4,7 +4,7 @@
 
 $(function() {
   if(window.UEDITOR_FIELDS !== undefined) {
-    for(var i in window.UEDITOR_FIELDS) {
+    for(var i=0; i<window.UEDITOR_FIELDS.length; i++) {
       var f = window.UEDITOR_FIELDS[i];
       UE.getEditor(f['id'], f['opt']);
     }
